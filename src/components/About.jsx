@@ -42,15 +42,14 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("","", 0.1, 1)}
-        className="mt-4 text-secondary text=[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text=[17px] max-w-5xl leading-[30px]"
       >
-        I am a passionate software and web developer with much experience 
-      working with Typescript and Javascript, as well as expertise 
-      in frameworks such as React, Node,js, Next.Js, Angular, and Three.js. 
-      I am a very quick learner and am eager to realize my peak potential.
-      I work well with both clients and teammates alike to create efficient, 
-      scalable, and user-friendly solutions that solve important problems. 
-      Let us work together to bring your ideas to life!
+        Born and raised in San Francisco, I am an aspiring frontend engineer. I have much
+        experience programming with many popular frameworks and languages, as well as familiarity
+        with commonly-used programs and services. I am a very quick learner and am eager to 
+        realize my peak potential. I work well with both clients and teammates alike to create 
+        efficient, scalable, and user-friendly solutions that solve important problems. 
+        Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

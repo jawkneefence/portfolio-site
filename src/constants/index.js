@@ -30,6 +30,8 @@ import {
     beavs,
     brain,
     kotlin,
+    data,
+    steam,
   } from "../assets";
   
   export const navLinks = [
@@ -53,12 +55,12 @@ import {
       icon: web,
     },
     {
-      title: "Kotlin Developer",
-      icon: mobile,
+      title: "Team - Oriented",
+      icon: backend,
     },
     {
-      title: "Frontend Developer",
-      icon: backend,
+      title: "Mobile Developer",
+      icon: mobile,
     },
     {
       title: "Content Creator",
@@ -122,34 +124,43 @@ import {
   ];
   
   const experiences = [
+
     {
-      title: "Robotics Club & AP Computer Science",
-      company_name: "George Washington High School",
-      icon: eagles,
-      iconBg: "#E6DEDD",
-      date: "Sept 2016 - June 2018",
-      points: [
-        "My first programming language: Java, paired with the BlueJ compiler.",
-        "Became familiar with pointers as well as some basic data structures and algorithms",
-        "Programming electronics with Arduino and Raspberry Pi PCBs.",
-        "Participated in Robot-Fighting competitions with other schools.",
-      ],
-    },
-    {
-      title: "Data Structures, Algorithms",
+      title: "Info Visualization, Scientific Visualization",
       company_name: "Oregon State University",
-      icon: beavs,
+      icon: data,
       iconBg: "#383E56",
-      date: "Sept 2019 - June 2020",
+      date: "June 2022 - Dec 2022",
       points: [
-        "Introduced to and operated on more complex data types such as vectors, linked lists, trees, heaps in C",
-        "Used abstract data types (collections, stacks, queues) in C",
-        "Managed time complexities and space/memory utilization in C",
-        "Solved recurrence relations",
-        "Calculate time complexities of algorithms",
-        "Programed recursive and dynamic algorithms in Python",
+        "Displayed data from various input sources in C.",
+        "Learned OpenGL; created complex 3D objects, terrains, lighting, and animations.",
       ],
     },
+
+    {
+      title: "Psychology Minor: Human-Computer Interaction, UI/UX Design",
+      company_name: "Oregon State University",
+      icon: brain,
+      iconBg: "#E6DEDD",
+      date: "Dec 2021 - June 2022",
+      points: [
+        "Collaborated with teams including designers, product managers, and other developers to create high-quality web/mobile apps.",
+        "Studied best practices/strategies in styling and UI implementation.",
+      ],
+    },
+
+    {
+      title: "Mobile Development",
+      company_name: "Oregon State University",
+      icon: kotlin,
+      iconBg: "#383E56",
+      date: "March 2021 - June 2021",
+      points: [
+        "Used Android Studio to create multiple projects in Kotlin",
+        "Learned to work with activities, fragments, recycler/list views, navcontrollers, device permissions, and API calls.",
+      ],
+    },
+
     {
       title: "Web Development, Database Operations",
       company_name: "Oregon State University",
@@ -164,42 +175,36 @@ import {
         "Practiced queries/operations in MySQL",
       ],
     },
+
     {
-      title: "Mobile Development",
+      title: "Data Structures, Algorithms",
       company_name: "Oregon State University",
-      icon: kotlin,
+      icon: beavs,
       iconBg: "#383E56",
-      date: "March 2021 - June 2021",
+      date: "Sept 2019 - June 2020",
       points: [
-        "Used Android Studio to create multiple projects in Kotlin",
-        "Learned to work with activities, fragments, recycler/list views, navcontrollers, device permissions, and API calls.",
+        "Operated on more complex data types such as vectors, linked lists, trees, heaps in C",
+        "Used abstract data types (collections, stacks, queues) in C",
+        "Managed time complexities and space/memory utilization in C",
+        "Solved recurrence relations",
+        "Calculate time complexities of algorithms",
+        "Programed recursive and dynamic algorithms in Python",
       ],
     },
+
     {
-      title: "Psychology Minor: Human-Computer Interaction, UI/UX Design",
-      company_name: "Oregon State University",
-      icon: brain,
+      title: "Robotics Club & AP Computer Science",
+      company_name: "George Washington High School",
+      icon: eagles,
       iconBg: "#E6DEDD",
-      date: "Dec 2021 - June 2022",
+      date: "Sept 2016 - June 2018",
       points: [
-        "Collaborated with teams including designers, product managers, and other developers to create high-quality web/mobile apps.",
-        "Studied best practices/strategies in styling and UI implementation.",
+        "My first programming language: Java, paired with the BlueJ compiler.",
+        "Became familiar with pointers as well as some basic data structures and algorithms",
+        "Programming electronics with Arduino and Raspberry Pi PCBs.",
+        "Participated in Robot-Fighting competitions with other schools.",
       ],
-    },
-    /*
-    {
-      title: "Full stack Development",
-      company_name: "Helping My Friend",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },*/
+    }
   ];
   
   const testimonials = [
@@ -227,14 +232,19 @@ import {
       company: "456 Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
+
   ];
   
   const projects = [
     {
       name: "My Pokedex",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that fetches and displays detailed information about every Pokemon. Made with NextJS and data from https://pokeapi.co/",
       tags: [
+        {
+          name: "frontend",
+          color: "green-text-gradient",
+        },
         {
           name: "react",
           color: "blue-text-gradient",
@@ -245,23 +255,31 @@ import {
         },
         {
           name: "restapi",
-          color: "green-text-gradient",
+          color: "pink-text-gradient",
         },
         {
           name: "tailwind",
           color: "blue-text-gradient",
         },
+        {
+          name: "redux",
+          color: "pink-text-gradient",
+        },
         
       ],
       image: pokedex,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/jawkneefence/pokedex",
       site_link: "https://mypokedex.site",
     },
     {
       name: "CookBook",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Mobile application that allows users to create accounts and upload images and ingredient-lists of recipes to a Firebase database. Made with Angular and Ionic Capacitor (convertible to iOS via Swift or Android via Kotlin)",
       tags: [
+        {
+          name: "fullstack",
+          color: "green-text-gradient",
+        },
         {
           name: "angular",
           color: "pink-text-gradient",
@@ -274,19 +292,27 @@ import {
           name: "kotlin",
           color: "green-text-gradient",
         },
+        {
+          name: "swift",
+          color: "blue-text-gradient",
+        },
       ],
       image: cookbook,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/jawkneefence/CookBook",
       site_link: "https://play.google.com/store/apps/details?id=com.johnnys.cookbook",
     },
     {
       name: "Helping My Friend",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "University Senior Project - collaborated with a team of 4; I collaborated in all areas of development and led the frontend team in implementing feature designs given by a non-technical third party. ",
       tags: [
         {
+          name: "fullstack",
+          color: "green-text-gradient",
+        },
+        {
           name: "ejs",
-          color: "blue-text-gradient",
+          color: "pink-text-gradient",
         },
         {
           name: "nodejs",
@@ -304,6 +330,22 @@ import {
       image: helpingmyfriend,
       source_code_link: "https://github.com/",
       site_link: "https://www.helpingmyfriend.com",
+    },
+    {
+      name: "Data Visualization Project",
+      description:
+        "Currently in-progress; focusing on using D3.",
+      tags: [
+        {
+          name: "D3.js",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "in-progress",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: steam,
     },
   ];
   

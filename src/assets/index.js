@@ -31,6 +31,7 @@ import tesla from "./company/tesla.png";
 import eagles from "./company/eagles.png";
 import beavs from "./company/beavs.png";
 import brain from "./company/brain.png";
+import data from "./company/data.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -39,8 +40,10 @@ import tripguide from "./tripguide.png";
 import helpingmyfriend from "./helpingmyfriend.png";
 import pokedex from "./pokedex.png";
 import cookbook from "./cookbook.png";
+import steam from "./steam.png";
 
 export {
+  data,
   logo,
   backend,
   creator,
@@ -77,4 +80,5 @@ export {
   beavs,
   brain,
   kotlin,
+  steam
 };

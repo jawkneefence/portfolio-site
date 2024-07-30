@@ -4,32 +4,30 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => { //isMobile use-effect object
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+const City = ({ isMobile }) => { //isMobile use-effect object
+  const city = useGLTF("./sanfrancisco/scene.gltf");
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.05} groundColor='black' />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[-35, 100, 9]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        intensity={0.14}
+        
       />
-      <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        object={city.scene}
+        scale={isMobile ? 0.004 : 0.007}
+        position={isMobile ? [0, -3.6, 0] : [0, -3.8, 0]}
+        rotation={[0, 0.965, 0]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const CityCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -56,10 +54,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop='demand'
-      shadows
-      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
@@ -67,7 +62,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <City isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
@@ -75,4 +70,4 @@ const ComputersCanvas = () => {
   );
 };
 
-export default ComputersCanvas;
+export default CityCanvas;

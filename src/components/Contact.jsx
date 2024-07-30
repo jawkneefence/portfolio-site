@@ -102,7 +102,7 @@ const Contact = () => {
             name="message"
             value={form.message}
             onChange={handleChange}
-            placeHolder="What's do you want to say?"
+            placeHolder="What would you like to say?"
             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>

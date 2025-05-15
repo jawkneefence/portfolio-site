@@ -34,7 +34,7 @@ const Contact = () => {
         from_name: form.name,
         to_name: 'Johnny',
         from_email: form.email,
-        to_email: "jawkneefence@gmail.com",
+        to_email: "johnny00chong@gmail.com",
         message: form.message,
      },
       "9nXrUF3R3FzdLtuqN" //public key

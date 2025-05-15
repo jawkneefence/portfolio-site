@@ -44,12 +44,8 @@ const About = () => {
         variants={fadeIn("","", 0.1, 1)}
         className="mt-4 text-secondary text=[17px] max-w-5xl leading-[30px]"
       >
-        Born and raised in San Francisco, I am an aspiring frontend engineer. I have much
-        experience programming with many popular frameworks and languages, as well as familiarity
-        with commonly-used programs and services. I am a very quick learner and am eager to 
-        realize my peak potential. I work well with both clients and teammates alike to create 
-        efficient, scalable, and user-friendly solutions that solve important problems. 
-        Let's work together to bring your ideas to life!
+        After graduating back in December of '22, I had a rough start to my career. The job market was extremely competitive, and I was dealing with too many personal issues. I lost people close to me, and my parents divorced. I traveled to Taiwan to receive a niche surgery to treat my dehabilitating Hyperhidrosis. I then spent almost a year living with my mother and helping with her business by becoming an insurance broker, which I was not interested in. For me, the entirety of the last few years have been about creating healthy space from my troubled family, healing, and about growing up. I've finally pulled myself back together, with the enthusiasm and passion for computers and technology that I've had since I was 5 years old. I have a strong background in both front and back-end development across many popular frameworks as well as in data analytics, and my interests mostly lie in Human-Computer Interaction. I'm desperate for an opportunity to prove myself, and I thank you for your time and consideration!
+
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

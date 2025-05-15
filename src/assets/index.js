@@ -20,7 +20,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import kotlin from "./tech/kotlin.png";
 
 //company icons
@@ -37,10 +37,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
-import helpingmyfriend from "./helpingmyfriend.png";
-import pokedex from "./pokedex.png";
+import appleclone from "./appleclone.png";
 import cookbook from "./cookbook.png";
-import steam from "./steam.png";
+import headsync from "./headsync.png";
+import pokedex from "./pokedex.png";
 
 export {
   data,
@@ -73,12 +73,12 @@ export {
   jobit,
   tripguide,
   arrow,
-  helpingmyfriend,
-  pokedex,
-  cookbook,
   eagles,
   beavs,
   brain,
   kotlin,
-  steam
+  cookbook,
+  appleclone,
+  headsync,
+  pokedex
 };
